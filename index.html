@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#070b09">
+<title></title>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1399310622039113');fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1399310622039113&ev=PageView&noscript=1"></noscript>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;min-height:100%;background:#070b09}
+body{min-height:100svh;overflow:hidden;font-family:Arial,sans-serif}
+.scene{height:100svh;min-height:620px;position:relative;overflow:hidden;background:
+ radial-gradient(ellipse at 50% 35%,#24372d 0,#111c16 35%,#080d0a 76%,#040605 100%)}
+.ambient{position:absolute;inset:0;background:
+ radial-gradient(ellipse at 50% 13%,rgba(203,220,194,.12),transparent 35%),
+ linear-gradient(180deg,transparent 35%,rgba(0,0,0,.62) 100%)}
+.roomline{position:absolute;inset:24px;border:1px solid rgba(210,222,210,.17);pointer-events:none}
+.table{
+ position:absolute;width:min(116vw,1500px);height:min(73vw,760px);min-height:470px;
+ left:50%;top:48%;transform:translate(-50%,-50%) rotate(-4deg);
+ border-radius:50%;background:
+ radial-gradient(ellipse at 48% 40%,rgba(80,125,91,.28),transparent 54%),
+ repeating-linear-gradient(103deg,rgba(255,255,255,.018) 0 1px,transparent 1px 4px),
+ radial-gradient(ellipse at center,#123c2b 0%,#0c2d20 58%,#06160f 76%);
+ box-shadow:0 45px 85px rgba(0,0,0,.8),0 0 0 13px #151b18,0 0 0 17px #414943,0 0 0 20px #111614,
+ inset 0 8px 22px rgba(255,255,255,.12),inset 0 -30px 50px rgba(0,0,0,.62);
+}
+.table:before{content:"";position:absolute;inset:24px;border:2px solid rgba(190,166,112,.54);border-radius:50%;box-shadow:inset 0 0 0 2px rgba(0,0,0,.15)}
+.table:after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(ellipse at 50% 50%,transparent 48%,rgba(0,0,0,.24) 100%)}
+.chipstack{position:absolute;z-index:2;width:78px;height:94px;filter:drop-shadow(0 14px 12px rgba(0,0,0,.55))}
+.chipstack i{position:absolute;left:0;width:78px;height:24px;border-radius:50%;border:3px dashed rgba(230,230,220,.85);box-shadow:inset 0 2px 5px rgba(255,255,255,.3),inset 0 -4px 7px rgba(0,0,0,.4)}
+.chipstack i:nth-child(1){top:0}.chipstack i:nth-child(2){top:13px}.chipstack i:nth-child(3){top:26px}.chipstack i:nth-child(4){top:39px}.chipstack i:nth-child(5){top:52px}
+.chipstack.graphite i{background:linear-gradient(90deg,#111719,#414b4d 48%,#121719)}
+.chipstack.burgundy i{background:linear-gradient(90deg,#4b101d,#8d2639 50%,#3a0d18)}
+.cards{position:absolute;z-index:3;left:50%;top:45%;transform:translate(-50%,-50%) rotate(-9deg);display:flex;gap:12px;filter:drop-shadow(0 18px 14px rgba(0,0,0,.55))}
+.card{width:clamp(82px,13vw,172px);height:clamp(118px,19vw,238px);border-radius:9px;background:linear-gradient(135deg,#fffefa,#d9d6ca);border:1px solid #bcb9af;position:relative;color:#161616;padding:12px;font-family:Georgia,serif;font-weight:bold}
+.card.red{color:#a21f2e}.card b{font-size:clamp(19px,3vw,34px)}.card span{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(40px,7vw,78px)}
+.chip-a{left:22%;top:42%}.chip-b{right:22%;top:54%}.chip-c{right:31%;top:27%;transform:scale(.75)}
+.action{position:absolute;z-index:5;left:50%;bottom:9%;transform:translateX(-50%);width:min(84vw,360px);height:64px;display:flex;align-items:center;justify-content:center;
+ color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.15em;font-size:15px;font-weight:700;
+ background:linear-gradient(180deg,#19724e,#0b4932);border:1px solid rgba(255,255,255,.48);border-radius:4px;
+ box-shadow:0 14px 42px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.24)}
+.action:focus-visible{outline:2px solid white;outline-offset:5px}
+@media(max-width:600px){.scene{min-height:560px}.roomline{inset:10px}.table{width:145vw;height:100vw;min-height:390px;top:43%}.chip-a{left:12%;top:43%}.chip-b{right:12%;top:56%}.chip-c{right:22%;top:27%}.action{bottom:8%;height:58px}}
+</style>
+</head>
+<body>
+<main class="scene" aria-label="Poker table landing page">
+ <div class="ambient"></div><div class="roomline"></div>
+ <div class="table"></div>
+ <div class="chipstack graphite chip-a"><i></i><i></i><i></i><i></i><i></i></div>
+ <div class="chipstack burgundy chip-b"><i></i><i></i><i></i><i></i><i></i></div>
+ <div class="chipstack graphite chip-c"><i></i><i></i><i></i><i></i><i></i></div>
+ <div class="cards"><div class="card red"><b>A</b><span>♥</span></div><div class="card"><b>A</b><span>♠</span></div></div>
+ <a class="action" href="https://t.me/+m-IwYm3Z2Tk2Nzc6" target="_blank" rel="noopener noreferrer"
+ onclick="if(typeof fbq==='function')fbq('track','Lead')">Qoşul</a>
+</main>
+</body></html>
